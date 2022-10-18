@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* Variables */
+:root {
+    /* Primary */
+    --PaleBlue-color: hsl(225, 100%, 94%);
+    --BrightBlue-color: hsl(245, 75%, 52%);
+    /* Neutral */
+    --VeryPaleBlue-color: hsl(225, 100%, 98%);
+    --DarkGrayishBlue-color: hsl(228, 12%, 48%);
+    --DarkBlue-color: hsl(223, 47%, 23%);
+    /* Font */
+    --paragraph-font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--PaleBlue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main .wave-bg img {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    left: 0;
+    z-index: -5;
+}
+main .container {
+    width: 28rem;
+    height: 42rem;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+}
+
+main .container .hero img {
+    max-width: 100%;
+}
+
+main .container .text {
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
+main .container .text h1 {
+    text-align: center;
+    margin-top: -1rem;
+    font-weight: bold;
+}
+
+main .container .text p {
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.5;
+}
+
+main .container .plan {
+    display: flex;
+    width: 25rem;
+    margin: 0 1.5rem;
+    border-radius: 15px;
+    background-color: var(--VeryPaleBlue-color);
+}
+
+main .container .plan img {
+    padding: 1rem;
+}
+main .container .plan h2 {
+    padding: 10px;
+    padding-bottom: 0;
+    margin-top: 6px;
+    font-size: 20px;
+}
+main .container .plan p {
+    display: flex;
+    align-items: center;
+    transform: translate(-6em, 1rem);
+    font-size: 20px;
+    opacity: .7;
+}
+
+main .container .plan a {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+main .container .payment {
+}
+main .container .payment a:first-of-type {
+    display: block;
+    margin: 1em auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 25rem;
+    background: var(--BrightBlue-color);
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+main .container .payment a {
+    display: block;
+    margin: 1em auto;
+    padding: 1rem;
+    width: 25rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--PaleBlue-color);
+}
+
+main .container .payment:hover a {
+    opacity: .9;
+}
