@@ -34,7 +34,7 @@ main .wave-bg img {
     z-index: -5;
 }
 main .container {
-    width: 28rem;
+    max-width: 28rem;
     height: 42rem;
     overflow: hidden;
     border-radius: 10px;
@@ -83,7 +83,7 @@ main .container .plan p {
     align-items: center;
     transform: translate(-6em, 1rem);
     font-size: 20px;
-    opacity: .7;
+    opacity: 0.7;
 }
 
 main .container .plan a {
@@ -118,5 +118,61 @@ main .container .payment a {
 }
 
 main .container .payment:hover a {
-    opacity: .9;
+    opacity: 0.9;
+}
+.attribution {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-210px, 30vh);
+}
+@media (max-width: 375px) {
+    main .container {
+        max-width: 20rem;
+        height: 37rem;
+    }
+    main .container .text h1 {
+        font-size: 25px;
+    }
+    main .container .text p {
+        font-size: 14px;
+        padding: 1rem 0;
+    }
+    main .container .plan {
+        max-width: 18rem;
+    }
+    main .container .plan h2 {
+        font-size: 15px;
+        position: absolute;
+        left: 0;
+        transform: translateX(7rem);
+    }
+    main .container .plan p {
+        font-size: 15px;
+        transform: translate(-10px, 1rem);
+    }
+    main .container .plan a {
+        transform: translateX(3rem);
+    }
+    main .container .payment a:first-of-type {
+        max-width: 18rem;
+    }
+    main .container .payment a {
+        max-width: 13rem;
+    }
+    .attribution {
+        text-align: center;
+        transform: translate(-80px, 30vh);
+        line-height: 2;
+        padding: 1rem;
+    }
+    .attribution a {
+        background: var(--PaleBlue-color);
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        width: fit-content;
+        cursor: pointer;
+    }
 }
